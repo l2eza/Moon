@@ -1,6 +1,6 @@
 let x = 0; // Starting position for x
 let y = 300; // Starting position for y
-let size = 590; 
+let size = 200; 
 let speed = 10; 
 
 function setup() {
