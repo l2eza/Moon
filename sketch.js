@@ -1,7 +1,7 @@
 let x = 0; // Starting position for x
 let y = 300; // Starting position for y
-let size = 85; 
-let speed = 5; 
+let size = 590; 
+let speed = 10; 
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -24,35 +24,36 @@ function draw() {
 // Custom function to draw the moon
 function drawMoon() {
   // Moon
-  fill(80);
+  fill('#D9D9D9');
   ellipse(width / 2, height / 2, width / 1.145);
 
   // Crater
-  fill(0, 30);
+  fill(0, 60);
   ellipse(width / 2 + width / 4, height / 2 - width / 4, width / 2);
 
   // Crater
-  fill(0, 30);
+  fill(0, 60);
   ellipse(width / 2 - width / 4, height / 2 + width / 10, width / 6);
 
   // Crater
-  fill(0, 30);
+  fill(0, 60);
   ellipse(width / 2, height / 2 + width / 3, width / 3);
 }
 
 // Custom function to draw spaceship
 function spaceship(x, y, size) {
-  fill(255);
+  fill('#0F2042');
   
   // Wings
   triangle(x + 25, y - size / 4, x + size, y + size / 4, x + 25, y + size * 3 / 4);
   
   // Body
+  fill('#F2A824')
   rect(x, y, size, size / 2, 5);
   ellipse(x + size, y + size / 4, size, size / 2);
   
   // Windows
-  fill(0);
+  fill ('#2659C2');
   ellipse(x + size / 3, y + size / 4, size / 4);
   ellipse(x + size * 2 / 3, y + size / 4, size / 4);
   ellipse(x + size, y + size / 4, size / 4);
