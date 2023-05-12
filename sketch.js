@@ -1,7 +1,7 @@
 let x = 0; // Starting position for x
 let y = 300; // Starting position for y
-let size = 200; 
-let speed = 10; 
+let size = 190; 
+let speed = 15; 
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
